@@ -1,6 +1,8 @@
 require "rubygems"
 require "hoe"
 
+Hoe.plugin :bundler
+
 
 def platform
   ENV.key?("MRI") ? "mri" : "jruby"
@@ -33,7 +35,7 @@ FileUtils.mv("Manifest_temp.txt", "Manifest.txt", force: true)
 Hoe.spec "using_sow" do |s|
 
   s.developer("Leszek Kalwa", "lj.kalwa@gmail.com")
-  s.name = "#{name}_gem"
+  s.name = "#{platform}_gem"
   s.urls = "http://example.com/lkalwa"
 
   s.testlib = :rspec
