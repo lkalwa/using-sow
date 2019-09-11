@@ -6,3 +6,4 @@ bin/using_sow
 lib/using_sow.rb
 jruby_code/jruby_code.rb
 jruby_code/jruby_nested_dir/jruby_nested_dir_code.rb
+seabolt_install/mkrf_conf

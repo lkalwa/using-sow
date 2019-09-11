@@ -1,0 +1,3 @@
+File.open("./pre_install.txt", "a") do |file|
+  file.puts("called from Rakefile in around install hook")
+end
