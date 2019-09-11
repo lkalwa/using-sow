@@ -67,7 +67,7 @@ Hoe.spec "using_sow" do |s|
     s.extra_deps += [['jar-dependencies']]
     s.spec_extras = {
         requirements: -> (requirements) { requirements  << 'jar org.neo4j.driver, neo4j-java-driver, 1.7.5' },
-        extensions: ["seabolt_install//mkrf_conf"]
+        extensions: ["seabolt_install/mkrf_conf"]
     }
   end
 
